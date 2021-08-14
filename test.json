@@ -1,0 +1,17 @@
+{
+    "not": {
+        "in": ["A"],
+        "out": ["Out"],
+        "cmd": "Out:1 = nand(A:1,A:1)"
+    },
+    "and": {
+        "in": ["A", "B"],
+        "out": ["Out"],
+        "cmd": "Out:1 = not(nand(A:1,B:1))"
+    },
+    "or": {
+        "in": ["A", "B"],
+        "out": ["Out"],
+        "cmd": "Out:1 = nand(not(A:1),not(B:1))"
+    }
+}
